@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+<div class="conteudo-total">
+    <div class="resumoPedido">
+        <p>Confirme seu pedido</p>
+        <p>Prato: 15.00</p>
+        <p>Bebida: 5.00</p>
+        <p>Sobremsa: 10.00</p>
+        <p>TOTAL: 30.00</p>
+        <div class="botaoWhats">
+            <a href="https://wa.me/+551130042222?text=Gostaria de mais informações" target="_blank">  
+                <p>Tudo certo, pode pedir!</p>
+            </a>
+        </div>
+        <button>Cancelar</button>
+    </div>
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <p>Sua comida em 6 minutos</p>
+        </div>
+
+        <div class="prato-principal">
+            <h1>Primeiro, seu prato</h1>
+            <div class="layout-horizontal">
+
+                <div onclick="selecionarProdutoPrato('frango')" class="container-produto frango">
+                    <img src="projeto__driven-eats__imagens/pf_frango.jpg" alt="pf de frango" />
+                    <h1>Frango tá gostoso</h1>
+                    <h2>Acompanha: arroz, feijão, salada e batata</h2>
+                    <p>15,00</p>
+                </div>
+
+                <div onclick="selecionarProdutoPrato('carne')" class="container-produto carne">
+                    <img src="projeto__driven-eats__imagens/pf_carne.jpg" alt="pf de carne" />
+                    <h1>Carne tá gostoso</h1>
+                    <h2>Acompanha: arroz, feijão, salada e batata</h2>
+                    <p>15,00</p>
+                </div>
+
+                <div onclick="selecionarProdutoPrato('calabresa')"          class="container-produto calabresa">
+                    <img src="projeto__driven-eats__imagens/pf_calabresa.png" alt="pf de calabresa">
+                    <h1>Calabresa tá gostoso</h1>
+                    <h2>Acompanha: arroz, feijão, salada e batata</h2>
+                    <p>15,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bebida">
+            <h1>Agora, sua bebida</h1>
+            <div class="layout-horizontal">
+                <div onclick="selecionarProdutoBebida('coca')" class="container-produto coca">
+                    <img src="projeto__driven-eats__imagens/coca.png" alt="coca cola" />
+                    <h1>Coca véu de noiva</h1>
+                    <h2>Tá super gelada!</h2>
+                    <p>5,00</p>
+                </div>
+                <div onclick="selecionarProdutoBebida('fanta')" class="container-produto fanta">
+                    <img src="projeto__driven-eats__imagens/fanta.png" alt="fanta" />
+                    <h1>Fanta véu de noiva</h1>
+                    <h2>Tá super gelada!</h2>
+                    <p>5,00</p>
+                </div>
+                <div onclick="selecionarProdutoBebida('suco')" class="container-produto suco">
+                    <img src="projeto__driven-eats__imagens/suco.png" alt="suco" />
+                    <h1>Suco véu de noiva</h1>
+                    <h2>Tá super gelada!</h2>
+                    <p>5,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div onclick="mudaBotao()" class="sobremesa">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="layout-horizontal">
+
+                <div  onclick="selecionarProdutoSobremesa('mouse')"  class="container-produto mouse">
+                    <img src="projeto__driven-eats__imagens/mouse.jpg" alt="mouse">
+                    <h1>Mouse dos deuses do Olímpo</h1>
+                    <h2>Tá uma delícia hehe!</h2>
+                    <p>10,00</p>
+                </div>
+
+                <div onclick="selecionarProdutoSobremesa('brownie')" class="container-produto brownie">
+                    <img src="projeto__driven-eats__imagens/brownie.jpg" alt="brownie">
+                    <h1>Brownie dos deuses do Olímpo</h1>
+                    <h2>Tá uma delícia hehe!</h2>
+                    <p>10,00</p>
+                </div>
+
+                <div onclick="selecionarProdutoSobremesa('pudim')" class="container-produto pudim">
+                    <img src="projeto__driven-eats__imagens/pudim.jpg" alt="pudim"/>
+                    <h1>Pudim dos deuses do Olímpo</h1>
+                    <h2>Tá uma delícia hehe!</h2>
+                    <p>10,00</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="botaoFinal">
+        <button class="fechar-pedido" onclick="checkOut()">Selecione os 3 itens para fechar o pedido</button>
+    </div>
+    <div class="resumoPedido">
+
+
+
+    <script src="projeto.js"></script>
+
+
+</div>
+</body>
+
+</html>
