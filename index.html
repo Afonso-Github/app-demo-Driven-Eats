@@ -20,19 +20,21 @@
 
 <body>
 <div class="conteudo-total">
-    <div class="resumoPedido">
-        <p>Confirme seu pedido</p>
-        <p>Prato: 15.00</p>
-        <p>Bebida: 5.00</p>
-        <p>Sobremsa: 10.00</p>
-        <p>TOTAL: 30.00</p>
-        <div class="botaoWhats">
-            <a href="https://wa.me/+551130042222?text=Gostaria de mais informações" target="_blank">  
+    <div class="semConteudo"></div>
+        <div class="resumoPedido">
+            <p>Confirme seu pedido</p>
+            <p>Prato: 15.00</p>
+            <p>Bebida: 5.00</p>
+            <p>Sobremsa: 10.00</p>
+            <p>TOTAL: 30.00</p>
+            <div class="botaoWhats">
+                <a href="https://wa.me/+551130042222?text=Gostaria de mais informações" target="_blank">  
                 <p>Tudo certo, pode pedir!</p>
-            </a>
+                </a>
+            </div>
+            <button onclick="voltarTela()">Cancelar</button>
         </div>
-        <button>Cancelar</button>
-    </div>
+
         <div class="topo">
             <h1>DrivenEats</h1>
             <p>Sua comida em 6 minutos</p>
@@ -116,17 +118,14 @@
             </div>
         </div>
 
-    <div class="botaoFinal">
-        <button class="fechar-pedido" onclick="checkOut()">Selecione os 3 itens para fechar o pedido</button>
-    </div>
-    <div class="resumoPedido">
+    <div id="1" class="botaoFinalVidro"></div>
+    <button class="fechar-pedido" onclick="checkOut()">Selecione os 3 itens para fechar o pedido</button>
+    
 
-
-
-    <script src="projeto.js"></script>
-
+<script src="projeto.js"></script>
 
 </div>
+
 </body>
 
 </html>

@@ -18,8 +18,6 @@ function selecionarProdutoBebida(bebida) {
 }
 
 
-
-
 function selecionarProdutoSobremesa(sobremesa) {
    let botaoAtual = document.querySelector("." + sobremesa);
    let selecionadoAntes = document.querySelector(".bordaVerdeSobremesa")
@@ -33,22 +31,27 @@ function selecionarProdutoSobremesa(sobremesa) {
 function mudaBotao() {
    let confere1 = document.querySelector(".selecionarProdutoPrato .bordaVerdePrato")
    let confere2 = document.querySelector(".selecionarProdutoBebida .bordaVerdeBebida")
-   let confere3 = document.querySelector(".selecionarProdutoSobremsa .bordaVerdeSobremesa")
-   if (confere1 !== false) {
-      if (confere2 !== false) {
-         if (confere3 !== false) {
-            let novoTexto = document.querySelector('.fechar-pedido')
-            novoTexto.innerHTML = 'Fechar pedido'
-            novoTexto.classList.add('fechar-pedido-close')
-         }
-      }
+   let confere3 = document.querySelector(".selecionarProdutoSobremesa .bordaVerdeSobremesa")
+   if (confere1&&confere2&&confere3 !== false) {
+      let novoTexto = document.querySelector('.fechar-pedido')
+      novoTexto.innerHTML = 'Fechar pedido'
+      novoTexto.classList.add('fechar-pedido-close')
+      let removeVidro = document.querySelector('#1')
+      removeVidro.classList.remove('botaoFinalVidro')
    }
 }
 
 
 function checkOut() {
-   let trocaFundo = document.querySelector('.conteudo-total')
-   trocaFundo.classList.add('conteudo-total-fim')
+   let trocaFundo = document.querySelector('.semConteudo')
+   trocaFundo.classList.add('fundoVidro')
    let apareceBotao = document.querySelector('.resumoPedido')
    apareceBotao.classList.add('resumoPedidoFim')
+}
+
+function voltarTela(){
+   let removerFundo = document.querySelector('.semConteudo')
+   let removerResumo = document.querySelector('.resumoPedido')
+   removerResumo.classList.remove('resumoPedidoFim')
+   removerFundo.classList.remove('fundoVidro')
 }
