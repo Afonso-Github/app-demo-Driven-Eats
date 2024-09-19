@@ -29,14 +29,14 @@ function selecionarProdutoSobremesa(sobremesa) {
 
 
 function mudaBotao() {
-   let confere1 = document.querySelector(".selecionarProdutoPrato .bordaVerdePrato")
-   let confere2 = document.querySelector(".selecionarProdutoBebida .bordaVerdeBebida")
-   let confere3 = document.querySelector(".selecionarProdutoSobremesa .bordaVerdeSobremesa")
-   if (confere1&&confere2&&confere3 !== false) {
+   let confere1 = document.querySelector(".bordaVerdePrato")
+   let confere2 = document.querySelector(".bordaVerdeBebida")
+   let confere3 = document.querySelector(".bordaVerdeSobremesa")
+   if (confere1&&confere2&&confere3 !== null) {
       let novoTexto = document.querySelector('.fechar-pedido')
       novoTexto.innerHTML = 'Fechar pedido'
       novoTexto.classList.add('fechar-pedido-close')
-      let removeVidro = document.querySelector('#1')
+      let removeVidro = document.querySelector('.botaoFinalVidro')
       removeVidro.classList.remove('botaoFinalVidro')
    }
 }

@@ -1,7 +1,6 @@
 .conteudo-total{
-    width: calc(100vw-1000px);
-    height: calc(100vh-254px);
-    /* background-color: #EEEEEE; */
+    width: calc(100vw-600px);
+    height: calc(100vh-400px);
     background-color: gray;
     position: relative;
 }
